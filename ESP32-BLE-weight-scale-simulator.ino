@@ -84,7 +84,7 @@ const int readyPin = GPIO_NUM_13; // LED indicator to show the system is up and 
 const int touchPin = GPIO_NUM_33; // touch Pin
 
 void printHelp() {
-  Serial.println("\r\nScale emulator");
+  Serial.println("\r\nScale simulator");
   Serial.println(" you can change weight by \"scale -s 60\" via serial port");
 
 }
@@ -265,7 +265,7 @@ void doInitialize() {
     delay(1000);
   }
 
-  Serial.printf("\r\nBLE-Weight scale emulator Version %s\r\n", VERSION);
+  Serial.printf("\r\nBLE-Weight scale simulator Version %s\r\n", VERSION);
   setupBoot(); //enable touch input
 
   pinMode(readyPin, OUTPUT);
