@@ -3,6 +3,7 @@ BLE weight scale simulator using NimBLE by ESP32 devkitC
 
 Reference "Read a Xiaomi Mi Smart scale using an ESP32"
 https://www.pangodream.es/read-xiaomi-mi-smart-scale-using-an-esp32
+
 This program behaves as a weight scaler with following charactristics
 
     SERVICE_UUID           "0000181d-0000-1000-8000-00805f9b34fb"  // BLE Weight scale service
