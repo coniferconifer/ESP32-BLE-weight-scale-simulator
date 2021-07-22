@@ -7,14 +7,13 @@ This program behaves as a weight scaler with following charactristics
 
     SERVICE_UUID           "0000181d-0000-1000-8000-00805f9b34fb"  // BLE Weight scale service
     CHARACTERISTIC_UUID_TX "00002a9d-0000-1000-8000-00805f9b34fb"  // Weight measurement charactristic
-    SERVICE_UUID_BATT "0000180f-0000-1000-8000-00805f9b34fb"
-    CHARACTERISTIC_UUID_BATT "00002a19-0000-1000-8000-00805f9b34fb"
+    SERVICE_UUID_BATT "0000180f-0000-1000-8000-00805f9b34fb"       // battery service
+    CHARACTERISTIC_UUID_BATT "00002a19-0000-1000-8000-00805f9b34fb" // fake battery level
 
-You can change weight value via serial port
+You can change weight value via USB serial port (115200bps)
 
-scale -s 88  // change scale to 88kg
-
-`# scale -s 63  (set scale value to 63kg )`
+`# scale -s 88  // change scale value to 88kg`
+`# scale -s 63  // change scale value to 63kg`
 
 This device sleeps after 120sec by default and awakend by touch to GPIO32
 
